@@ -13,7 +13,19 @@
     height: 80vh;
     text-align: center;
     color: $clr-white;
+
+    @include mediaQuery(){
+              
+            
+        @include grid(1,2rem);
+    }
 }
+
+ .booknow{
+
+    background-color:#333333;
+    color: $clr-white;
+ }
 
 hr{
 
@@ -48,4 +60,159 @@ h3{
             @include grid(1,2rem);
         }
     }
+}
+
+
+ .about{
+
+    
+    &__wrapper{
+
+       margin-top: 5rem;    
+    
+       
+    }
+    
+    
+      &__clinic{
+
+       
+        margin-top: 10rem;
+      }
+
+      &__doctorsdesc{
+
+
+        margin-bottom: 16rem;
+        
+        
+      }
+
+      &__clinicdesc{
+
+        
+        margin-bottom: 6rem;
+      }
+ }
+
+ .testimonials{
+
+    padding: 6rem 0;
+
+color: $clr-gray;
+
+    &__wrapper{
+
+        @include grid(3,2rem);
+        
+        @include mediaQuery(){
+              
+            
+            @include grid(1,2rem);
+        }
+    }
+
+}
+
+.faq{
+    padding: 6rem 0;
+
+    &__wrapper{
+
+        margin-top: 4rem;
+        @include mediaQuery(){
+              
+            
+            @include grid(1,2rem);
+        }   
+
+    }
+ 
+}
+
+
+
+.location {
+    padding: 5rem;
+    background-color: $clr-gray;
+
+    &__wrapper {
+        @include grid(2, 2rem);
+
+        @include mediaQuery() {
+            @include grid(1, 2rem);
+            justify-content: center;
+        }
+    }
+
+    hr {
+        width: 65%;
+        margin: 2rem auto;
+        border: 1px solid $clr-primary;
+    }
+
+    img {
+        height: 450px;
+        width: 700px;
+    }
+
+    p {
+        display: grid;
+        padding: 0 5rem 0 5rem;
+        color: $clr-white;
+    }
+
+    h2 {
+        padding: 0 5rem 0 5rem;
+        font-size: 30px;
+        color: $clr-white;
+    }
+
+    h3 {
+        color: $clr-white;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+.footer {
+    padding: 5rem;
+    background-color: $clr-primary;
+
+    h3 {
+        color: $clr-white;
+    }
+
+    ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    p {
+        color: $clr-white;
+    }
+
+    .links_credits p {
+        justify-content: center;
+    }
+}
+
+
+
+
+
+
+.slider{
+
+
+
 }
