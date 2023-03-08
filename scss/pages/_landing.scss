@@ -23,8 +23,15 @@
 
  .booknow{
 
+    padding: 2rem 0;
     background-color:#333333;
     color: $clr-white;
+
+    @include mediaQuery(){
+              
+            
+        @include grid(1,2rem);
+    }
  }
 
 hr{
@@ -93,6 +100,12 @@ h3{
         
         margin-bottom: 6rem;
       }
+
+      @include mediaQuery(){
+              
+            
+        @include grid(1,2rem);
+    }
  }
 
  .testimonials{
@@ -101,16 +114,47 @@ h3{
 
 color: $clr-gray;
 
-    &__wrapper{
+    // &__wrapper{
 
-        @include grid(3,2rem);
+    //     @include grid(3,2rem);
         
-        @include mediaQuery(){
+    //     @include mediaQuery(){
               
             
-            @include grid(1,2rem);
+    //         @include grid(1,2rem);
+    //     }
+
+
+        
+    // }
+
+    .tns-nav{
+
+        text-align: center;
+        margin-top: 5rem auto;
+        button{
+            color: $clr-gray;
+            height: 2rem;
+            width: 2rem;
+            border: none;
+            margin: 0 0.2rem;
+            border-radius: 50%;
         }
+
+       
     }
+
+  .tns-nav .tns-nav-active{
+
+        background-color: $clr-primary;
+    }
+
+
+    
+
+
+   
+
 
 }
 
@@ -169,7 +213,13 @@ color: $clr-gray;
     }
 
     h3 {
+         font-size: 30px;
         color: $clr-white;
+    }
+    @include mediaQuery(){
+              
+            
+        @include grid(1,2rem);
     }
 }
 
@@ -189,6 +239,8 @@ color: $clr-gray;
 
     h3 {
         color: $clr-white;
+        font-size: 1rem;
+
     }
 
     ul {
@@ -202,6 +254,7 @@ color: $clr-gray;
     }
 
     .links_credits p {
+        
         justify-content: center;
     }
 }
@@ -211,8 +264,4 @@ color: $clr-gray;
 
 
 
-.slider{
-
-
-
-}
+ 

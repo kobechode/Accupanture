@@ -45,8 +45,16 @@ a {
 }
 
 .booknow {
+  padding: 2rem 0;
   background-color: #333333;
   color: #f2f2f2;
+}
+@media screen and (max-width: 48rem) {
+  .booknow {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 2rem;
+  }
 }
 
 hr {
@@ -91,22 +99,32 @@ h3 {
 .about__clinicdesc {
   margin-bottom: 6rem;
 }
+@media screen and (max-width: 48rem) {
+  .about {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 2rem;
+  }
+}
 
 .testimonials {
   padding: 6rem 0;
   color: #3d4045;
 }
-.testimonials__wrapper {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 2rem;
+.testimonials .tns-nav {
+  text-align: center;
+  margin-top: 5rem auto;
 }
-@media screen and (max-width: 48rem) {
-  .testimonials__wrapper {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-gap: 2rem;
-  }
+.testimonials .tns-nav button {
+  color: #3d4045;
+  height: 2rem;
+  width: 2rem;
+  border: none;
+  margin: 0 0.2rem;
+  border-radius: 50%;
+}
+.testimonials .tns-nav .tns-nav-active {
+  background-color: #e85d64;
 }
 
 .faq {
@@ -160,7 +178,15 @@ h3 {
   color: #f2f2f2;
 }
 .location h3 {
+  font-size: 30px;
   color: #f2f2f2;
+}
+@media screen and (max-width: 48rem) {
+  .location {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 2rem;
+  }
 }
 
 .footer {
@@ -169,6 +195,7 @@ h3 {
 }
 .footer h3 {
   color: #f2f2f2;
+  font-size: 1rem;
 }
 .footer ul {
   display: flex;
